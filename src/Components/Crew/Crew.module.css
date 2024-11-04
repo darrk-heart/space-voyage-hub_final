@@ -1,0 +1,80 @@
+.background {
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.content {
+  width: 85%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topic {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+}
+.topic h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.topicNumber {
+  color: #888888;
+  padding-right: 15px;
+}
+.textnpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list {
+  color: rgb(139, 135, 135);
+  display: flex;
+  margin: 0;
+  font-size: 3rem;
+}
+.list li {
+  margin: 0 15px;
+}
+.text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #666666;
+}
+.pic img {
+  width: 100%;
+  height: auto;
+}
+.pic {
+  width: 50%;
+  height: 50%;
+  margin-top: 10%;
+}
+.selected {
+  color: white;
+}
+.info h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.info h4 {
+  margin: 5% 0 2% 0;
+  color: rgb(139, 135, 135);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.info p {
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}

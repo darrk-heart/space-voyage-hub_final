@@ -1,0 +1,81 @@
+.background {
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.content {
+  width: 85%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topic {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+}
+.topic h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.topicNumber {
+  color: #888888;
+  padding-right: 15px;
+}
+.picntext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pic {
+  margin: 10% 0;
+  width: 100%;
+}
+.pic img {
+  width: 100%;
+}
+.numbers {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.number {
+  padding: 10px 16px;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: white;
+  border: 1px solid white;
+}
+.text h4 {
+  color: #999999;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin: 15px 0 20px 0;
+}
+.text h1 {
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+.text p {
+  color: #cccccc;
+  line-height: 1.5;
+}
+.selected {
+  background-color: white;
+  color: black;
+}
