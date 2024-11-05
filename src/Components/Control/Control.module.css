@@ -54,17 +54,20 @@
   /* Laptop-specific styles */
   .controls {
     width: 100%;
-    padding-top: 5%;
+    padding-top: 3%;
+    justify-content: space-between;
   }
   .logo {
-    padding: 0 0 0 8%;
+    padding: 0 8% 0 8%;
   }
   .icon {
     display: none;
   }
 
   .tabletViewControl {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 90%;
   }
   .lists {
     list-style-type: none;
@@ -72,7 +75,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
     background-color: rgba(64, 64, 64, 0.5);
-    padding: 0 130px 0 50px;
+    padding: 0 200px 0 50px;
   }
   .lists h4 {
     margin: 0 10px 0 0;
@@ -86,5 +89,11 @@
   .lists li:hover {
     border-bottom: 3px solid white;
     cursor: pointer;
+  }
+  .line {
+    background-color: rgba(64, 64, 64, 0.5);
+    padding: 0 15%;
+    height: 1.5px;
+    font-size: 0.1rem;
   }
 }

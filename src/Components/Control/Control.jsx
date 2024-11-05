@@ -26,7 +26,7 @@ function Control({ setActiveComponent }) {
         className={styles.icon}
       />
       <div className={styles.tabletViewControl}>
-        <div></div>
+        <div className={styles.line}>.</div>
         <ul className={styles.lists}>
           <li onClick={() => handleMenuItemClick("Home")}>
             <h4>00 </h4>
