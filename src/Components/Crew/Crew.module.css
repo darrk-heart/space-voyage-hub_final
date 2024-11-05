@@ -78,3 +78,50 @@
   font-size: 0.8rem;
   line-height: 1.5;
 }
+
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+  .topic {
+    justify-content: left;
+    margin: 5% 0 0 10%;
+  }
+  .textnpic {
+    flex-direction: row;
+  }
+  .text {
+    order: 1;
+    border-top: 0;
+    width: 40%;
+    text-align: left;
+    padding-left: 10%;
+    height: auto;
+  }
+  .pic {
+    order: 2;
+    margin: 0;
+    height: auto;
+  }
+  .bubbles {
+    order: 2;
+    background-color: red;
+    justify-content: left;
+    align-items: left;
+  }
+  .pic img {
+    width: 50%;
+    height: auto;
+  }
+  .info h4 {
+    font-size: 2rem;
+  }
+  .info h1 {
+    font-size: 3.5rem;
+  }
+  .info p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    width: 82%;
+  }
+}

@@ -50,7 +50,7 @@ function Crew({ setActiveComponent }) {
             )}
           </div>
           <div className={styles.text}>
-            <div>
+            <div className={styles.bubbles}>
               <ul className={styles.list}>
                 {data.crew.map((crew) => (
                   <li

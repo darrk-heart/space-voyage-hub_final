@@ -6,7 +6,7 @@ import Crew from "./Components/Crew/Crew";
 import Technology from "./Components/Technology/Technology";
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState("Destination");
+  const [activeComponent, setActiveComponent] = useState("Crew");
 
   const renderComponent = () => {
     switch (activeComponent) {
