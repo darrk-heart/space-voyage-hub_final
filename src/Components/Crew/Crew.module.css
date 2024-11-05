@@ -101,7 +101,8 @@
   .pic {
     order: 2;
     margin: 0;
-    height: auto;
+    /* height: auto; */
+    /* position: relative;height: 100vh; Full viewport height */
   }
   .bubbles {
     order: 2;
@@ -110,7 +111,11 @@
     align-items: left;
   }
   .pic img {
-    width: 50%;
+    /* top: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); */
+    width: 55%;
     height: auto;
   }
   .info h4 {
@@ -123,5 +128,11 @@
     font-size: 1.2rem;
     line-height: 1.7;
     width: 82%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .image {
   }
 }
