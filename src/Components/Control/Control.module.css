@@ -52,7 +52,13 @@
 
 @media (min-width: 1024px) {
   /* Laptop-specific styles */
-
+  .controls {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .logo {
+    padding: 0 0 0 8%;
+  }
   .icon {
     display: none;
   }
@@ -65,14 +71,20 @@
     display: flex;
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
-    background-color: rgba(128, 128, 128, 0.2);
-    padding: 30px 90px;
+    background-color: rgba(64, 64, 64, 0.5);
+    padding: 0 130px 0 50px;
   }
   .lists h4 {
-    margin: 0;
+    margin: 0 10px 0 0;
   }
   .lists li {
     display: flex;
-    margin: 0 15px;
+    margin: 0 25px;
+    padding: 27px 0;
+    border-bottom: 3px solid rgba(64, 64, 64, 0);
+  }
+  .lists li:hover {
+    border-bottom: 3px solid white;
+    cursor: pointer;
   }
 }
