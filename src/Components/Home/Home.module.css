@@ -61,15 +61,47 @@
   cursor: pointer;
 }
 
-
 @media (min-width: 1024px) {
-  /* Laptop-specific styles */
   .background {
     background-image: url("../../assets/home/background-home-desktop.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+  }
+
+  .text {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .firstText {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+  }
+  .secondText {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .secondText h1 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 60%;
+  }
+
+  .firstText h3 {
+    font-size: 1.2rem;
+  }
+  .firstText h1 {
+    font-size: 9rem;
+    margin: 20px 0;
+  }
+  .firstText p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    width: 69%;
   }
 }
