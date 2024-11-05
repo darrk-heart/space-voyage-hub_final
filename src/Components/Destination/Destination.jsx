@@ -58,8 +58,16 @@ function Destination({ setActiveComponent }) {
               <>
                 <h1>{selectedDestination.name.toUpperCase()}</h1>
                 <p>{selectedDestination.description}</p>
-                <h5>AVG. DISTANCE</h5>
-                <h3>{selectedDestination.distance.toUpperCase()}</h3>
+                <div className={styles.tsw}>
+                  <div>
+                    <h5>AVG. DISTANCE</h5>
+                    <h3>{selectedDestination.distance.toUpperCase()}</h3>
+                  </div>
+                  <div>
+                    <h5>EST. TRAVEL TIME</h5>
+                    <h3>{selectedDestination.travel.toUpperCase()}</h3>
+                  </div>
+                </div>
               </>
             )}
           </div>

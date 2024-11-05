@@ -59,8 +59,13 @@
   border-bottom: 3px solid white;
   color: white;
 }
+.secondText li:hover {
+  /* border-bottom: 3px solid white; */
+  cursor: pointer;
+  color: white;
+}
 .secondText h1 {
-  font-size: 3, 8rem;
+  font-size: 3 rem;
   margin: 10px 0 0 0;
   font-weight: 100;
 }
@@ -74,7 +79,6 @@
 }
 .secondText h5 {
   color: #cccccc;
-  margin: 0;
   font-size: 1rem;
   margin: 5% 0;
 }
@@ -82,4 +86,54 @@
   margin: 0;
   font-size: 2rem;
   font-weight: 100;
+}
+
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  }
+  .text {
+    flex-direction: row;
+  }
+  .firstText {
+    width: 50%;
+    display: block;
+  }
+  .topic {
+    justify-content: left;
+    margin-left: 15%;
+  }
+  .secondText {
+    width: 50%;
+    text-align: left;
+    margin-top: 5%;
+  }
+  .firstText img {
+    width: 65%;
+    margin: 10% 0;
+  }
+  .secondText ul {
+    justify-content: left;
+  }
+  .secondText li {
+    margin-right: 5%;
+  }
+  .secondText p {
+    width: 75%;
+  }
+  .secondText h1 {
+    font-size: 8rem;
+    margin: 30px 0 20px 0;
+  }
+  .secondText p {
+    font-family: "Montserrat", sans-serif;
+  }
+  .secondText h5 {
+    margin: 7% 0 3% 0;
+  }
+  .tsw {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
