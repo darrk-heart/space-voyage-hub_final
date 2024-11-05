@@ -6,6 +6,7 @@ import close from "../../assets/shared/icon-close.svg";
 
 function Control({ setActiveComponent }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("Home");
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
@@ -13,6 +14,7 @@ function Control({ setActiveComponent }) {
 
   const handleMenuItemClick = (component) => {
     setActiveComponent(component);
+    setSelectedItem(component);
     setIsMenuOpen(false);
   };
 
@@ -28,22 +30,18 @@ function Control({ setActiveComponent }) {
       <div className={styles.tabletViewControl}>
         <div className={styles.line}>.</div>
         <ul className={styles.lists}>
-          <li onClick={() => handleMenuItemClick("Home")}>
-            <h4>00 </h4>
-            <span>HOME</span>
-          </li>
-          <li onClick={() => handleMenuItemClick("Destination")}>
-            <h4>01 </h4>
-            <span>DESTINATION</span>
-          </li>
-          <li onClick={() => handleMenuItemClick("Crew")}>
-            <h4>02 </h4>
-            <span>CREW</span>
-          </li>
-          <li onClick={() => handleMenuItemClick("Technology")}>
-            <h4>03 </h4>
-            <span>TECHNOLOGY</span>
-          </li>
+          {["Home", "Destination", "Crew", "Technology"].map((item, index) => (
+            <li
+              key={item}
+              onClick={() => handleMenuItemClick(item)}
+              className={`${styles.listItem} ${
+                selectedItem === item ? styles.selected : ""
+              }`}
+            >
+              <h4>{`0${index}`}</h4>
+              <span>{item.toUpperCase()}</span>
+            </li>
+          ))}
         </ul>
       </div>
 

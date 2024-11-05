@@ -85,6 +85,7 @@
     margin: 0 25px;
     padding: 27px 0;
     border-bottom: 3px solid rgba(64, 64, 64, 0);
+    transition: border-bottom 0.4s ease;
   }
   .lists li:hover {
     border-bottom: 3px solid white;
@@ -95,5 +96,8 @@
     padding: 0 15%;
     height: 1.5px;
     font-size: 0.1rem;
+  }
+  .selected {
+    border-bottom: 3px solid white;
   }
 }
