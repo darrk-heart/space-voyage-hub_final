@@ -60,3 +60,16 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+
+@media (min-width: 1024px) {
+  /* Laptop-specific styles */
+  .background {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+}

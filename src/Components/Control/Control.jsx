@@ -25,6 +25,27 @@ function Control({ setActiveComponent }) {
         onClick={toggleMenu}
         className={styles.icon}
       />
+      <div className={styles.tabletViewControl}>
+        <div></div>
+        <ul className={styles.lists}>
+          <li>
+            <h4>00 </h4>
+            <span>HOME</span>
+          </li>
+          <li>
+            <h4>01 </h4>
+            <span>DESTINATION</span>
+          </li>
+          <li>
+            <h4>02 </h4>
+            <span>CREW</span>
+          </li>
+          <li>
+            <h4>03 </h4>
+            <span>TECHNOLOGY</span>
+          </li>
+        </ul>
+      </div>
 
       <div className={`${styles.slideMenu} ${isMenuOpen ? styles.show : ""}`}>
         <div className={styles.controlText}>
